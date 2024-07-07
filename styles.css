@@ -9,91 +9,56 @@ body {
     min-height: 100vh;
 }
 
-.quickbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #292929;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-.quickbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
-    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-.quickbar a:hover {
-    color: #4a73b5;
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.quickbar-icon {
-    height: 40px;
-    width: 40px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.quickbar-icon:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 header {
     background: #1f1f1f;
     border-bottom: 1px solid #333333;
-    padding: 30px 20px; /* Reduced padding */
+    padding: 5px;
     text-align: center;
-    margin-top: 50px; /* Added margin to avoid overlap with quickbar */
 }
 
 main {
     flex: 1;
-    padding: 10px; /* Reduced padding */
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.project-overview {
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+}
+
+.project {
     text-align: center;
     margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-image {
+.project img {
     border-radius: 45px;
     transition: transform 0.3s;
 }
 
-.project-image:hover {
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project img:hover {
     transform: scale(1.1);
 }
 
-.description, .credits {
-    background: #545454;
-    border-radius: 45px;
-    padding: 10px; /* Reduced padding */
-    text-align: center;
-    margin: 20px 0;
-    max-width: 600px;
-}
-
-.description h5, .credits h5 {
-    margin-top: 0;
-}
-
 footer {
-    padding: 10px; /* Reduced padding */
+    padding: 20px;
     background: #292929;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
 }
 
 h3, h4 {
@@ -114,4 +79,40 @@ h3, h4 {
 .donate-button:hover {
     background-color: #3a5b8b;
     transform: scale(1.05);
+}
+.quickbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #292929;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.quickbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.quickbar a:hover {
+    color: #4a73b5;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quickbar-icon {
+    height: 40px;
+    width: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quickbar-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

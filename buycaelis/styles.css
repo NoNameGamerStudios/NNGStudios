@@ -49,7 +49,7 @@ body {
 header {
     background: #1f1f1f;
     border-bottom: 1px solid #333333;
-    padding: 30px 20px; /* Reduced padding */
+    padding: 5px; /* Reduced padding */
     text-align: center;
     margin-top: 50px; /* Added margin to avoid overlap with quickbar */
 }
