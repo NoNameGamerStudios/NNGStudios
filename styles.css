@@ -85,7 +85,7 @@ h3, h4 {
     top: 0;
     width: 100%;
     background: #292929;
-    padding: 10px 20px;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,7 +95,7 @@ h3, h4 {
 .quickbar a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 14px;
     transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
