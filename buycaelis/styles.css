@@ -9,11 +9,41 @@ body {
     min-height: 100vh;
 }
 
+.quickbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #292929;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.quickbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.quickbar a:hover {
+    color: #4a73b5;
+}
+
+.quickbar-icon {
+    height: 40px;
+    width: 40px;
+}
+
 header {
     background: #1f1f1f;
     border-bottom: 1px solid #333333;
-    padding: 20px;
+    padding: 60px 20px 20px; /* Adjusted padding to account for quickbar */
     text-align: center;
+    margin-top: 50px; /* Added margin to avoid overlap with quickbar */
 }
 
 main {
