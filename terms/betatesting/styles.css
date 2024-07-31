@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #1f1f1f, #333333);
+    background: #1f1f1f;
     color: white;
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
@@ -49,26 +49,27 @@ body {
 header {
     background: #1f1f1f;
     border-bottom: 1px solid #333333;
-    padding: 30px 20px; 
+    padding: 30px 20px;
     text-align: center;
     margin-top: 50px;
 }
 
 main {
     flex: 1;
-    padding: 10px; 
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .contact-section, .privacy-section, .terms-section {
-    background: #545454;
-    border-radius: 45px;
+    background: #292929;
+    border-radius: 15px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
-    max-width: 600px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .contact-section h3, .privacy-section h3, .terms-section h3 {
@@ -76,10 +77,10 @@ main {
 }
 
 footer {
-    padding: 10px; 
+    padding: 10px;
     background: #292929;
     text-align: center;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 h3, h4 {
