@@ -49,14 +49,14 @@ body {
 header {
     background: #1f1f1f;
     border-bottom: 1px solid #333333;
-    padding: 30px 20px; /* Reduced padding */
+    padding: 30px 20px; 
     text-align: center;
-    margin-top: 50px; /* Added margin to avoid overlap with quickbar */
+    margin-top: 50px;
 }
 
 main {
     flex: 1;
-    padding: 10px; /* Reduced padding */
+    padding: 10px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +65,7 @@ main {
 .contact-section, .privacy-section, .terms-section {
     background: #545454;
     border-radius: 45px;
-    padding: 10px; /* Reduced padding */
+    padding: 20px;
     text-align: center;
     margin: 20px 0;
     max-width: 600px;
@@ -76,10 +76,10 @@ main {
 }
 
 footer {
-    padding: 10px; /* Reduced padding */
+    padding: 10px; 
     background: #292929;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto; 
 }
 
 h3, h4 {
