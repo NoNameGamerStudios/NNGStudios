@@ -20,6 +20,8 @@ body {
     align-items: center;
     z-index: 1000;
     padding-right: 40px;
+    box-sizing: border-box; 
+    margin-right: 20px;
 }
 
 .quickbar a {
