@@ -19,12 +19,15 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    padding-right: 40px;
+    box-sizing: border-box; 
+    margin-right: 20px;
 }
 
 .quickbar a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 14px;
     transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
