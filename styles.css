@@ -9,12 +9,83 @@ body {
     min-height: 100vh;
 }
 
+header {
+    background: #1f1f1f;
+    border-bottom: 1px solid #333333;
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+}
+
+.project {
+    text-align: center;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project img {
+    border-radius: 45px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    padding: 20px;
+    background: #292929;
+    text-align: center;
+}
+
+h3, h4 {
+    margin: 10px 0;
+}
+
+.donate-button {
+    background-color: #4a73b5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #3a5b8b;
+    transform: scale(1.05);
+}
 .quickbar {
-    position: fixed;
+    position:sticky;
     top: 0;
     width: 100%;
     background: #292929;
-    padding: 10px 20px;
+    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,74 +118,4 @@ body {
 .quickbar-icon:hover {
     transform: translateY(-5px);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-header {
-    background: #1f1f1f;
-    border-bottom: 1px solid #333333;
-    padding: 5px; /* Reduced padding */
-    text-align: center;
-    margin-top: 50px; /* Added margin to avoid overlap with quickbar */
-}
-
-main {
-    flex: 1;
-    padding: 10px; /* Reduced padding */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-overview {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.project-image {
-    border-radius: 45px;
-    transition: transform 0.3s;
-}
-
-.project-image:hover {
-    transform: scale(1.1);
-}
-
-.description, .credits {
-    background: #545454;
-    border-radius: 45px;
-    padding: 10px; /* Reduced padding */
-    text-align: center;
-    margin: 20px 0;
-    max-width: 600px;
-}
-
-.description h5, .credits h5 {
-    margin-top: 0;
-}
-
-footer {
-    padding: 10px; /* Reduced padding */
-    background: #292929;
-    text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
-}
-
-h3, h4 {
-    margin: 10px 0;
-}
-
-.donate-button {
-    background-color: #4a73b5;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.donate-button:hover {
-    background-color: #3a5b8b;
-    transform: scale(1.05);
 }
