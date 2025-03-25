@@ -119,3 +119,29 @@ h3, h4 {
     transform: translateY(-5px);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+.project-overview {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.project-image {
+    border-radius: 45px;
+    transition: transform 0.3s;
+}
+
+.project-image:hover {
+    transform: scale(1.1);
+}
+
+.description, .credits {
+    background: #545454;
+    border-radius: 45px;
+    padding: 10px; /* Reduced padding */
+    text-align: center;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.description h5, .credits h5 {
+    margin-top: 0;
+}
